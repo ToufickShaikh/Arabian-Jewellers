@@ -1,3 +1,23 @@
+/* Font color for H1 */
+h1 {
+    color: #f5deb3; /* Light gold */
+}
+
+/* Font color for H2 */
+h2 {
+    color: #f5deb3; /* Light gold */
+}
+
+/* Font color for H3 */
+h3 {
+    color: #f5deb3; /* Light gold */
+}
+
+/* Font color for paragraphs */
+p {
+    color: #d4af37; /* Slightly deeper gold for contrast */
+}
+
 /* Custom CSS for gold color */
 .text-gold {
     color: #d4af37; /* Light gold color */
@@ -31,5 +51,33 @@ a.bg-gold {
     background-image: url('https://your-image-url.com/hero-bg.jpg'); /* Replace with actual background image URL */
 }
 
-/* Additional custom styles can go here */
+/* Hover effect for images */
+.collection-item img:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s;
+}
+
+/* Why Choose Us section styles */
+
+/* Aligning icons and text */
+.why-choose-item {
+    text-align: center;
+}
+
+.why-choose-item .icon img {
+    width: 64px; /* Icon size */
+    margin: 0 auto; /* Center the icon */
+}
+
+.why-choose-item h3 {
+    margin-top: 16px;
+    font-size: 1.5rem; /* Size for H3 */
+    color: #f5deb3; /* Light gold */
+}
+
+.why-choose-item p {
+    margin-top: 8px;
+    font-size: 1rem;
+    color: #d4af37; /* Slightly deeper gold */
+}
 
