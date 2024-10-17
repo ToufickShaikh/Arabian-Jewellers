@@ -11,3 +11,25 @@
 }
 
 /* Additional styles can be added here */
+/* Light gold text color */
+.text-light-gold {
+    color: #f5deb3; /* Soft light gold */
+}
+
+/* Gold background for buttons */
+.bg-gold {
+    background-color: #d4af37;
+}
+
+/* Button text should contrast the background */
+a.bg-gold {
+    color: #1c1c1c; /* Dark, contrasting color for button text */
+}
+
+/* Background image styling for hero section */
+.hero-section {
+    background-image: url('https://your-image-url.com/hero-bg.jpg'); /* Replace with actual background image URL */
+}
+
+/* Additional custom styles can go here */
+
