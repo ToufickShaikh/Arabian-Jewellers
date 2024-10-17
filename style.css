@@ -81,3 +81,17 @@ a.bg-gold {
     color: #d4af37; /* Slightly deeper gold */
 }
 
+/* Testimonials section styles */
+
+.testimonial-item {
+    background-color: #f9f9f9; /* Light background for testimonials */
+}
+
+.testimonial-item p {
+    color: #333; /* Dark text for contrast */
+}
+
+.testimonial-item h3 {
+    color: #f5deb3; /* Light gold for names */
+}
+
