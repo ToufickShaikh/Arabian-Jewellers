@@ -1,219 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arabian Jewellers</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="style.css"> <!-- Link to your external stylesheet -->
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
-
-<body class="bg-custom">
-
-    <!-- Navbar -->
-    <header class="bg-black bg-opacity-70 fixed w-full z-10">
-        <div class="container mx-auto flex justify-between items-center p-4">
-            <div class="logo">
-                <a href="#"><img src="https://arabianjeweller.com/wp-content/uploads/2021/09/logo.png" alt="Arabian Jewellers" class="h-16"></a>
-            </div>
-            <nav class="nav-links">
-                <ul id="nav-menu" class="hidden md:flex space-x-6">
-                    <li><a href="#" class="text-gold hover:text-yellow-300">Home</a></li>
-                    <li><a href="#" class="text-gold hover:text-yellow-300">About Us</a></li>
-                    <li><a href="#" class="text-gold hover:text-yellow-300">Collections</a></li>
-                    <li><a href="#" class="text-gold hover:text-yellow-300">Services</a></li>
-                    <li><a href="#" class="text-gold hover:text-yellow-300">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="nav-icons flex items-center space-x-4">
-                <a href="tel:+1234567890" class="text-gold hover:text-yellow-300">
-                    <i class="fa fa-phone"></i> +123-456-7890
-                </a>
-                <a href="#" class="text-gold hover:text-yellow-300"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="text-gold hover:text-yellow-300"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="text-gold hover:text-yellow-300"><i class="fab fa-twitter"></i></a>
-                <div class="hamburger md:hidden cursor-pointer" id="hamburger-menu">
-                    <i class="fa fa-bars text-gold"></i>
-                </div>
-            </div>
+<body>
+    <nav class="navbar navbar-expand-lg bg-gray-900 p-3">
+        <a class="navbar-brand text-white" href="#">Arabian Jewellers</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link text-white" href="#dowicy">DOWICY</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#juwio">JUWIO</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#newt">NEWT</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#rings">RINGS</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#lowact">LOWACT</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#lomact">LOMACT</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#loymact">LOYMACT</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#contact">CONTACT</a></li>
+            </ul>
         </div>
-    </header>
-
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden fixed inset-0 bg-black bg-opacity-90 z-20 flex flex-col items-center justify-center">
-        <ul class="space-y-4 p-4">
-            <li><a href="#" class="text-gold hover:text-yellow-300">Home</a></li>
-            <li><a href="#" class="text-gold hover:text-yellow-300">About Us</a></li>
-            <li><a href="#" class="text-gold hover:text-yellow-300">Collections</a></li>
-            <li><a href="#" class="text-gold hover:text-yellow-300">Services</a></li>
-            <li><a href="#" class="text-gold hover:text-yellow-300">Contact</a></li>
-        </ul>
-    </div>
-    <!-- Hero Section -->
-    <section class="hero-section relative h-screen bg-center bg-cover bg-no-repeat" style="background-image: url('https://your-image-url.com/hero-bg.jpg');">
-        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-            <div class="text-center text-light-gold p-6">
-                <h1 class="text-5xl md:text-7xl font-bold mb-4">Discover Exquisite Beauty</h1>
-                <p class="text-lg md:text-2xl mb-8">Timeless pieces crafted for your elegance</p>
-                <a href="#collections" class="bg-gold text-light-gold py-3 px-6 rounded-md hover:bg-yellow-300">Explore Our Collection</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Us  -->
-    <section id="about" class="about-section py-16">
-        <div class="container mx-auto px-4">
-            <div class="md:flex md:items-center">
-                <!-- About Us Text -->
-                <div class="md:w-1/2 mb-8 md:mb-0">
-                    <h2 class="text-4xl font-bold text-gold mb-4">About Us</h2>
-                    <p class="text-lg text-white mb-6">
-                        At Arabian Jewellers, we believe in the beauty of craftsmanship and the timeless elegance of each piece we create. Our expertise in designing luxury jewelry has been passed down through generations, bringing together tradition and modern artistry. Whether you're looking for a classic piece or a contemporary design, our team is dedicated to helping you find the perfect expression of your personal style.
-                    </p>
-                    <p class="text-lg text-white">
-                        With years of experience in the industry, Arabian Jewellers is known for its exquisite attention to detail, superior materials, and commitment to customer satisfaction. Explore our collections and discover the beauty that has made us a trusted name in luxury jewelry.
-                    </p>
-                </div>
-                <!-- About Us Image -->
-                <div class="md:w-1/2">
-                    <img src="https://your-image-url.com/about-image.jpg" alt="About Arabian Jewellers" class="rounded-lg shadow-lg">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Jewelry Collections Section Features -->
-    <section id="collections" class="collections-section py-16 ">
-        <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold mb-8 text-center">Our Exquisite Collections</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Collection 1 -->
-                <div class="collection-item text-center">
-                    <div class="relative overflow-hidden rounded-lg shadow-lg">
-                        <img src="/images/ring.jpg" alt="Wedding Rings" class="w-full h-64 object-cover transform hover:scale-105 transition duration-500">
-                    </div>
-                    <h3 class="text-2xl font-semibold mt-4">Wedding Rings</h3>
-                    <p class="mt-2">Timeless and elegant rings for your special day.</p>
-                </div>
-    
-                <!-- Collection 2 -->
-                <div class="collection-item text-center">
-                    <div class="relative overflow-hidden rounded-lg shadow-lg">
-                        <img src="/images/Necklaces.jfif" alt="Diamond Necklaces" class="w-full h-64 object-cover transform hover:scale-105 transition duration-500">
-                    </div>
-                    <h3 class="text-2xl font-semibold mt-4">Diamond Necklaces</h3>
-                    <p class="mt-2">Stunning diamond necklaces to add a sparkle.</p>
-                </div>
-    
-                <!-- Collection 3 -->
-                <div class="collection-item text-center">
-                    <div class="relative overflow-hidden rounded-lg shadow-lg">
-                        <img src="/images/Chain.jpg" alt="Luxury Watches" class="w-full h-64 object-cover transform hover:scale-105 transition duration-500">
-                    </div>
-                    <h3 class="text-2xl font-semibold mt-4">Chains</h3>
-                    <p class="mt-2">Sophisticated timepieces for every occasion.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Why Choose Us  -->
-
-    <section id="why-choose-us" class="why-choose-us-section py-16 ">
-        <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-8">Why Choose Us</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-                <!-- Reason 1 -->
-                <div class="why-choose-item">
-                    <div class="icon mb-4">
-                        <img src="/images/craft.png" alt="Craftsmanship" class="w-16 mx-auto">
-                    </div>
-                    <h3 class="text-2xl font-semibold">Expert Craftsmanship</h3>
-                    <p class="mt-2">With years of experience, our artisans create timeless pieces with precision and care.</p>
-                </div>
-    
-                <!-- Reason 2 -->
-                <div class="why-choose-item">
-                    <div class="icon mb-4">
-                        <img src="https://png.pngtree.com/png-clipart/20211116/original/pngtree-high-quality-png-image_6933547.png" alt="High-Quality Materials" class="w-16 mx-auto">
-                    </div>
-                    <h3 class="text-2xl font-semibold">High-Quality Materials</h3>
-                    <p class="mt-2">We use only the finest materials to ensure every piece is of the highest standard.</p>
-                </div>
-    
-                <!-- Reason 3 -->
-                <div class="why-choose-item">
-                    <div class="icon mb-4">
-                        <img src="https://static.vecteezy.com/system/resources/previews/016/389/943/large_2x/customer-satisfaction-survey-free-png.png" alt="Customer Satisfaction" class="w-16 mx-auto">
-                    </div>
-                    <h3 class="text-2xl font-semibold">Customer Satisfaction</h3>
-                    <p class="mt-2">Our commitment to customer service ensures an exceptional experience every time.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Testimonials  -->
-    <section id="testimonials" class="testimonials-section py-16 ">
-        <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-8">What Our Customers Say</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Testimonial 1 -->
-                <div class="testimonial-item border p-6 rounded-lg shadow-lg">
-                    <p class="text-lg italic">"I purchased my wedding ring from Arabian Jewellers, and I couldn't be happier! The craftsmanship is stunning."</p>
-                    <h3 class="text-xl font-semibold mt-4">Sarah M.</h3>
-                    <div class="flex justify-center mt-2">
-                        <img src="/images/star.png" alt="Star Rating" class="w-5">
-                        <img src="/images/star.png" alt="Star Rating" class="w-5">
-                        <img src="/images/star.png" alt="Star Rating" class="w-5">
-                        <img src="/images/star.png" alt="Star Rating" class="w-5">
-                        <img src="/images/star.png" alt="Star Rating" class="w-5">
-                    </div>
-                </div>
-    
-                <!-- Testimonial 2 -->
-                <div class="testimonial-item border p-6 rounded-lg shadow-lg">
-                    <p class="text-lg italic">"The quality of the jewelry is exceptional, and the customer service was outstanding. Highly recommend!"</p>
-                    <h3 class="text-xl font-semibold mt-4">John D.</h3>
-                    <div class="flex justify-center mt-2">
-                        <img src="/images/star.png" alt="Star Rating" class="w-5">
-                        <img src="/images/star.png" alt="Star Rating" class="w-5">
-                        <img src="/images/star.png" alt="Star Rating" class="w-5">
-                        <img src="/images/star.png" alt="Star Rating" class="w-5">
-                        <img src="/images/star.png" alt="Star Rating" class="w-5">
-                    </div>
-                </div>
-    
-                <!-- Testimonial 3 -->
-                <div class="testimonial-item border p-6 rounded-lg shadow-lg">
-                    <p class="text-lg italic">"I received the best service and my jewelry was made exactly to my specifications. I will be back!"</p>
-                    <h3 class="text-xl font-semibold mt-4">Emily R.</h3>
-                    <div class="flex justify-center mt-2">
-                        <img src="/images/star.png" alt="Star Rating" class="w-5">
-                        <img src="/images/star.png" alt="Star Rating" class="w-5">
-                        <img src="/images/star.png" alt="Star Rating" class="w-5">
-                        <img src="/images/star.png" alt="Star Rating" class="w-5">
-                        <img src="/images/star.png" alt="Star Rating" class="w-5">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-
-
-    <!-- JavaScript to Toggle Mobile Menu -->
-    <script>
-        const hamburgerMenu = document.getElementById('hamburger-menu');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        hamburgerMenu.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden'); // Toggle the hidden class for mobile menu
-        });
-    </script>
-
+    </nav>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-
 </html>

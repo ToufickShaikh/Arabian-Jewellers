@@ -1,97 +1,19 @@
-/* Font color for H1 */
-h1 {
-    color: #f5deb3; /* Light gold */
+body {
+    font-family: Arial, sans-serif;
 }
 
-/* Font color for H2 */
-h2 {
-    color: #f5deb3; /* Light gold */
+.navbar {
+    background-color: #333;
 }
 
-/* Font color for H3 */
-h3 {
-    color: #f5deb3; /* Light gold */
-}
-
-/* Font color for paragraphs */
-p {
-    color: #d4af37; /* Slightly deeper gold for contrast */
-}
-
-/* Custom CSS for gold color */
-.text-gold {
-    color: #d4af37; /* Light gold color */
-}
-
-/* Background image for the body */
-.bg-custom {
-    background-image: url('/bg.jpg'); /* Replace with your background image */
-    background-size: cover;
-    background-position: center;
-}
-
-/* Additional styles can be added here */
-/* Light gold text color */
-.text-light-gold {
-    color: #f5deb3; /* Soft light gold */
-}
-
-/* Gold background for buttons */
-.bg-gold {
-    background-color: #d4af37;
-}
-
-/* Button text should contrast the background */
-a.bg-gold {
-    color: #1c1c1c; /* Dark, contrasting color for button text */
-}
-
-/* Background image styling for hero section */
-.hero-section {
-    background-image: url('https://your-image-url.com/hero-bg.jpg'); /* Replace with actual background image URL */
-}
-
-/* Hover effect for images */
-.collection-item img:hover {
-    transform: scale(1.05);
-    transition: transform 0.5s;
-}
-
-/* Why Choose Us section styles */
-
-/* Aligning icons and text */
-.why-choose-item {
+.navbar .nav-link {
+    color: #f2f2f2;
     text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
 }
 
-.why-choose-item .icon img {
-    width: 64px; /* Icon size */
-    margin: 0 auto; /* Center the icon */
+.navbar .nav-link:hover {
+    background-color: #ddd;
+    color: black;
 }
-
-.why-choose-item h3 {
-    margin-top: 16px;
-    font-size: 1.5rem; /* Size for H3 */
-    color: #f5deb3; /* Light gold */
-}
-
-.why-choose-item p {
-    margin-top: 8px;
-    font-size: 1rem;
-    color: #d4af37; /* Slightly deeper gold */
-}
-
-/* Testimonials section styles */
-
-.testimonial-item {
-    background-color: #f9f9f9; /* Light background for testimonials */
-}
-
-.testimonial-item p {
-    color: #333; /* Dark text for contrast */
-}
-
-.testimonial-item h3 {
-    color: #f5deb3; /* Light gold for names */
-}
-
