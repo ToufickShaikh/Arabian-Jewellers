@@ -17,3 +17,7 @@ body {
     background-color: #ddd;
     color: black;
 }
+
+.logo {
+    height: 50px;  /* Adjust as needed */
+}
