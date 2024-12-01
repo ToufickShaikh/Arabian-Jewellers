@@ -92,3 +92,30 @@ body {
     /* Limit card width on larger screens */
   }
 }
+
+.footer {
+  background-color: #423d3d;
+  /* Dark gray background */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  /* Stack elements vertically */
+  align-items: center;
+  /* Center horizontally */
+}
+
+.footer p {
+  margin-bottom: 10px;
+}
+
+.social-links a {
+  color: white;
+  margin: 0 10px;
+  /* Space between icons */
+  font-size: 20px;
+}
